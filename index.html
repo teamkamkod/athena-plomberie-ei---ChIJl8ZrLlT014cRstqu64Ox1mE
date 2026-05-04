@@ -1,0 +1,1927 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>athena plomberie ei — plomberie — Le Bouscat</title>
+  <meta name="description" content="athena plomberie ei à Le Bouscat : expert en dépannage d'urgence, installation sanitaire, et entretien de chaudières. Interventions rapides et fiables.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #205072;
+      --secondary: #39b7b7;
+      --background: #f5fafd;
+      --text: #22313f;
+      --cta: #e67e22;
+      --radius: 4px;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Open Sans', sans-serif;
+      --section-padding: 64px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--background);
+      color: var(--text);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-heading);
+      color: var(--primary);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* ===================== NAV ===================== */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--primary);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    }
+
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .nav-brand {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: #fff;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: none;
+      list-style: none;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.88);
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--secondary);
+    }
+
+    .nav-cta-btn {
+      background: var(--cta);
+      color: #fff !important;
+      padding: 8px 18px;
+      border-radius: var(--radius);
+      font-weight: 700 !important;
+      transition: background 0.2s !important;
+    }
+
+    .nav-cta-btn:hover {
+      background: #cf6d17 !important;
+      color: #fff !important;
+    }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background: #fff;
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+
+    .hamburger.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background: var(--primary);
+      padding: 16px 20px 24px;
+      gap: 4px;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    .mobile-menu a {
+      color: rgba(255,255,255,0.88);
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      transition: color 0.2s;
+    }
+
+    .mobile-menu a:last-child {
+      border-bottom: none;
+    }
+
+    .mobile-menu a:hover {
+      color: var(--secondary);
+    }
+
+    @media (min-width: 768px) {
+      .nav-links {
+        display: flex;
+      }
+      .hamburger {
+        display: none;
+      }
+      .mobile-menu {
+        display: none !important;
+      }
+    }
+
+    /* ===================== HERO ===================== */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1a4060 0%, var(--primary) 50%, #1d6a8a 100%);
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2339b7b7' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.4;
+    }
+
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(57,183,183,0.18);
+      border: 1px solid rgba(57,183,183,0.4);
+      color: var(--secondary);
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: var(--radius);
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.6rem, 5vw, 3.8rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      max-width: 640px;
+    }
+
+    .hero h1 span {
+      color: var(--secondary);
+    }
+
+    .hero-sub {
+      font-family: var(--font-body);
+      font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+      color: rgba(255,255,255,0.82);
+      max-width: 520px;
+      margin-bottom: 36px;
+      line-height: 1.7;
+    }
+
+    .hero-btns {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .btn-primary {
+      background: var(--cta);
+      color: #fff;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 16px 32px;
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .btn-primary:hover {
+      background: #cf6d17;
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #fff;
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 15px 32px;
+      border-radius: var(--radius);
+      border: 2px solid rgba(255,255,255,0.5);
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--secondary);
+      background: rgba(57,183,183,0.1);
+    }
+
+    .hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    .hero-trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.82rem;
+      font-family: var(--font-body);
+    }
+
+    .hero-trust-item svg {
+      flex-shrink: 0;
+    }
+
+    @media (min-width: 768px) {
+      .hero-inner {
+        padding: 80px 40px;
+      }
+
+      .hero-btns {
+        flex-direction: row;
+        width: auto;
+      }
+
+      .btn-primary, .btn-secondary {
+        width: auto;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .hero-inner {
+        padding: 100px 40px;
+      }
+    }
+
+    /* ===================== SECTION BASE ===================== */
+    .section {
+      padding: 48px 16px;
+    }
+
+    .section-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--secondary);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .section-divider {
+      width: 48px;
+      height: 3px;
+      background: var(--secondary);
+      border-radius: 2px;
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: 768px) {
+      .section {
+        padding: var(--section-padding) 24px;
+      }
+    }
+
+    /* ===================== SERVICES ===================== */
+    #services {
+      background: #fff;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .service-card {
+      background: var(--background);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      border-left: 4px solid var(--secondary);
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 80px;
+      height: 80px;
+      background: radial-gradient(circle at top right, rgba(57,183,183,0.08), transparent 70%);
+    }
+
+    .service-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(32,80,114,0.12);
+    }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    .service-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: #fff;
+    }
+
+    .service-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .service-card p {
+      font-size: 0.9rem;
+      color: var(--text);
+      line-height: 1.6;
+      opacity: 0.85;
+    }
+
+    @media (min-width: 600px) {
+      .services-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    /* ===================== URGENCE ===================== */
+    #urgence-plomberie {
+      background: linear-gradient(135deg, var(--primary) 0%, #1d6a8a 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #urgence-plomberie::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .urgence-inner {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 24px;
+    }
+
+    .urgence-icon {
+      width: 72px;
+      height: 72px;
+      background: rgba(230,126,34,0.2);
+      border: 2px solid var(--cta);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .urgence-icon svg {
+      width: 36px;
+      height: 36px;
+      fill: var(--cta);
+    }
+
+    .urgence-inner h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .urgence-inner p {
+      color: rgba(255,255,255,0.82);
+      font-size: 1rem;
+      max-width: 560px;
+      line-height: 1.7;
+    }
+
+    .urgence-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--cta);
+      color: #fff;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.2rem;
+      padding: 16px 32px;
+      border-radius: var(--radius);
+      transition: background 0.2s, transform 0.15s;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .urgence-phone:hover {
+      background: #cf6d17;
+      transform: translateY(-2px);
+    }
+
+    @media (min-width: 768px) {
+      .urgence-phone {
+        width: auto;
+      }
+    }
+
+    /* ===================== REVIEWS ===================== */
+    #avis-clients {
+      background: var(--background);
+    }
+
+    .reviews-header {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .rating-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #fff;
+      border: 1px solid rgba(32,80,114,0.12);
+      border-radius: var(--radius);
+      padding: 12px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      width: fit-content;
+    }
+
+    .rating-stars {
+      color: #f4b400;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+    }
+
+    .rating-num {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--primary);
+    }
+
+    .rating-count {
+      font-size: 0.82rem;
+      color: #666;
+      font-family: var(--font-body);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .review-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 2px 12px rgba(32,80,114,0.07);
+      border-top: 3px solid var(--secondary);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .review-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(32,80,114,0.12);
+    }
+
+    .review-stars {
+      color: #f4b400;
+      font-size: 1rem;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+
+    .review-text {
+      font-size: 0.9rem;
+      color: var(--text);
+      line-height: 1.7;
+      margin-bottom: 16px;
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .review-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+
+    .review-author-name {
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 0.88rem;
+      color: var(--primary);
+    }
+
+    .review-source {
+      font-size: 0.75rem;
+      color: #888;
+    }
+
+    @media (min-width: 768px) {
+      .reviews-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* ===================== ABOUT / PRESENTATION ===================== */
+    #presentation {
+      background: #fff;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-text p {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+
+    .about-features {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .about-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .about-feature-icon {
+      width: 28px;
+      height: 28px;
+      background: rgba(57,183,183,0.12);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .about-feature-icon svg {
+      width: 14px;
+      height: 14px;
+      fill: var(--secondary);
+    }
+
+    .about-feature p {
+      font-size: 0.88rem;
+      color: var(--text);
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .about-visual {
+      background: linear-gradient(135deg, rgba(32,80,114,0.06), rgba(57,183,183,0.08));
+      border-radius: var(--radius);
+      padding: 40px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .about-stat {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .about-stat-num {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .about-stat-num span {
+      color: var(--secondary);
+    }
+
+    .about-stat-label {
+      font-size: 0.82rem;
+      color: #666;
+      font-family: var(--font-body);
+    }
+
+    .about-stats-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    @media (min-width: 1024px) {
+      .about-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* ===================== ZONE INTERVENTION ===================== */
+    #zone-intervention {
+      background: var(--background);
+    }
+
+    .zone-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    .zone-map {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      height: 320px;
+    }
+
+    .zone-map iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .zone-info {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .zone-hours {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .zone-hours h3 {
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hours-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .hours-table tr {
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .hours-table tr:last-child {
+      border-bottom: none;
+    }
+
+    .hours-table td {
+      padding: 8px 0;
+      font-size: 0.88rem;
+      font-family: var(--font-body);
+    }
+
+    .hours-table td:first-child {
+      font-weight: 600;
+      color: var(--primary);
+      text-transform: capitalize;
+      width: 50%;
+    }
+
+    .hours-table td:last-child {
+      color: var(--text);
+      opacity: 0.8;
+    }
+
+    .hours-closed {
+      color: #e74c3c !important;
+      opacity: 1 !important;
+    }
+
+    .zone-contact-info {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .zone-contact-info h3 {
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .contact-detail:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-detail-icon {
+      width: 36px;
+      height: 36px;
+      background: rgba(32,80,114,0.08);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-detail-icon svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--primary);
+    }
+
+    .contact-detail-text {
+      font-size: 0.88rem;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .contact-detail-text strong {
+      display: block;
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
+    }
+
+    @media (min-width: 1024px) {
+      .zone-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .zone-map {
+        height: 100%;
+        min-height: 400px;
+      }
+    }
+
+    /* ===================== CONTACT ===================== */
+    #contact-rapide {
+      background: #fff;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .contact-form-wrap {
+      background: var(--background);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+    }
+
+    .contact-form-wrap p {
+      font-size: 0.9rem;
+      color: var(--text);
+      opacity: 0.8;
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1.5px solid rgba(32,80,114,0.18);
+      border-radius: var(--radius);
+      font-family: var(--font-body);
+      font-size: 0.92rem;
+      color: var(--text);
+      background: #fff;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--secondary);
+      box-shadow: 0 0 0 3px rgba(57,183,183,0.12);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-submit {
+      background: var(--cta);
+      color: #fff;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 15px 32px;
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .form-submit:hover {
+      background: #cf6d17;
+      transform: translateY(-1px);
+    }
+
+    .contact-aside {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-aside-card {
+      background: var(--background);
+      border-radius: var(--radius);
+      padding: 24px;
+      border-left: 4px solid var(--secondary);
+    }
+
+    .contact-aside-card h3 {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .contact-aside-card p {
+      font-size: 0.88rem;
+      color: var(--text);
+      opacity: 0.85;
+      line-height: 1.6;
+    }
+
+    .contact-aside-card a {
+      color: var(--cta);
+      font-weight: 600;
+    }
+
+    @media (min-width: 1024px) {
+      .contact-grid {
+        grid-template-columns: 3fr 2fr;
+      }
+    }
+
+    /* ===================== FOOTER ===================== */
+    .footer {
+      background: var(--primary);
+      color: rgba(255,255,255,0.8);
+      padding: 48px 16px 24px;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+
+    .footer-tagline {
+      font-size: 0.85rem;
+      line-height: 1.6;
+      opacity: 0.75;
+      margin-bottom: 16px;
+    }
+
+    .footer-rating {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.1);
+      border-radius: var(--radius);
+      padding: 8px 14px;
+    }
+
+    .footer-rating .stars {
+      color: #f4b400;
+      font-size: 0.9rem;
+    }
+
+    .footer-rating .num {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+
+    .footer-rating .count {
+      font-size: 0.78rem;
+      opacity: 0.7;
+    }
+
+    .footer-col h4 {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer-col ul li a {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.7);
+      transition: color 0.2s;
+    }
+
+    .footer-col ul li a:hover {
+      color: var(--secondary);
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 12px;
+      font-size: 0.85rem;
+    }
+
+    .footer-contact-item svg {
+      flex-shrink: 0;
+      margin-top: 2px;
+      fill: var(--secondary);
+    }
+
+    .footer-contact-item a {
+      color: rgba(255,255,255,0.8);
+      transition: color 0.2s;
+    }
+
+    .footer-contact-item a:hover {
+      color: var(--secondary);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      font-size: 0.78rem;
+      opacity: 0.55;
+    }
+
+    @media (min-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+
+    /* ===================== ANIMATIONS ===================== */
+    .fade-in {
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+    }
+
+    /* ===================== MODAL ===================== */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.72);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 32px;
+      width: 90%;
+      max-width: 420px;
+      position: relative;
+      animation: fadeInModal 0.2s ease;
+    }
+
+    @keyframes fadeInModal {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      background: none;
+      border: none;
+      font-size: 1.4rem;
+      color: #888;
+      cursor: pointer;
+      line-height: 1;
+      padding: 4px 8px;
+    }
+
+    .modal-close:hover {
+      color: var(--text);
+    }
+
+    .modal-title {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 16px;
+      padding-right: 24px;
+    }
+
+    .modal-body {
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      color: var(--text);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .modal-cta {
+      display: block;
+      width: 100%;
+      background: var(--cta);
+      color: #fff;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 14px;
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      transition: background 0.2s;
+    }
+
+    .modal-cta:hover {
+      background: #cf6d17;
+    }
+
+    .modal-note {
+      font-size: 0.78rem;
+      color: #888;
+      text-align: center;
+      margin-top: 12px;
+    }
+
+    /* ===================== TRUST SIGNALS ===================== */
+    .trust-bar {
+      background: var(--primary);
+      padding: 20px 16px;
+    }
+
+    .trust-bar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .trust-item svg {
+      flex-shrink: 0;
+      fill: var(--secondary);
+    }
+
+    .trust-item span {
+      font-size: 0.82rem;
+      font-family: var(--font-body);
+      font-weight: 500;
+      line-height: 1.3;
+    }
+
+    @media (min-width: 768px) {
+      .trust-bar-inner {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    /* ===================== SCROLL TOP ===================== */
+    .scroll-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s, transform 0.3s;
+      z-index: 500;
+    }
+
+    .scroll-top.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .scroll-top:hover {
+      background: var(--secondary);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">athena plomberie ei</a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#urgence-plomberie">Urgence</a></li>
+        <li><a href="#avis-clients">Avis</a></li>
+        <li><a href="#presentation">À propos</a></li>
+        <li><a href="#zone-intervention">Contact</a></li>
+        <li><a href="#contact-rapide" class="nav-cta-btn">Devis gratuit</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu" role="menu">
+      <a href="#services" role="menuitem">Services</a>
+      <a href="#urgence-plomberie" role="menuitem">Urgence</a>
+      <a href="#avis-clients" role="menuitem">Avis clients</a>
+      <a href="#presentation" role="menuitem">À propos</a>
+      <a href="#zone-intervention" role="menuitem">Horaires & Contact</a>
+      <a href="#contact-rapide" role="menuitem">Devis gratuit</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="accueil" aria-label="Accueil">
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        Le Bouscat — Bordeaux
+      </div>
+      <h1>Votre plombier de confiance à <span>Le Bouscat</span></h1>
+      <p class="hero-sub">Interventions rapides et efficaces dans tous les quartiers bordelais.</p>
+      <div class="hero-btns">
+        <a href="#contact-rapide" class="btn-primary">Demander une intervention</a>
+        <a href="#contact-rapide" class="btn-secondary">Obtenir un devis gratuit</a>
+      </div>
+      <div class="hero-trust">
+        <div class="hero-trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Intervention rapide
+        </div>
+        <div class="hero-trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Devis gratuit en ligne
+        </div>
+        <div class="hero-trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Note 4.9/5 — 15 avis
+        </div>
+        <div class="hero-trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Artisan certifié
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar" aria-label="Nos engagements">
+    <div class="trust-bar-inner">
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+        <span>Travail garanti</span>
+      </div>
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+        <span>Réactivité maximale</span>
+      </div>
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <span>Devis en ligne</span>
+      </div>
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        <span>Professionnalisme</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="section" id="services" aria-labelledby="services-title">
+    <div class="section-inner">
+      <p class="section-label fade-in">Ce que nous faisons</p>
+      <h2 class="section-title fade-in" id="services-title">Nos Services</h2>
+      <div class="section-divider fade-in"></div>
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+          </div>
+          <h3>Dépannage d'urgence</h3>
+          <p>Intervention rapide pour tous vos problèmes de plomberie.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+          </div>
+          <h3>Installation sanitaire</h3>
+          <p>Pose professionnelle de vos équipements sanitaires.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M17.66 8L12 2.35 6.34 8C4.78 9.56 4 11.64 4 13.64s.78 4.11 2.34 5.67 3.61 2.35 5.66 2.35 4.1-.79 5.66-2.35S20 15.64 20 13.64 19.22 9.56 17.66 8zM6 14c.01-2 .62-3.27 1.76-4.4L12 5.27l4.24 4.38C17.38 10.77 17.99 12 18 14H6z"/></svg>
+          </div>
+          <h3>Réparation de fuites</h3>
+          <p>Détection et réparation rapide de toutes fuites.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm1 17.93V18h-2v1.93C7.06 19.48 4.52 16.94 4.07 14H6v-2H4.07C4.52 9.06 7.06 6.52 10 6.07V8h2V6.07c2.94.45 5.48 2.99 5.93 5.93H16v2h1.93c-.45 2.94-2.99 5.48-5.93 5.93z"/></svg>
+          </div>
+          <h3>Entretien de chaudières</h3>
+          <p>Service complet pour assurer le bon fonctionnement de votre chaudière.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- URGENCE -->
+  <section class="section" id="urgence-plomberie" aria-labelledby="urgence-title">
+    <div class="section-inner">
+      <div class="urgence-inner">
+        <div class="urgence-icon">
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        </div>
+        <div>
+          <h2 id="urgence-title">Urgence plomberie ?</h2>
+          <p>Une fuite, une canalisation bouchée, un ballon en panne ? Appelez-nous maintenant pour une intervention rapide à Le Bouscat et dans toute la région bordelaise.</p>
+        </div>
+        <a href="tel:+33768388236" class="urgence-phone">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          +33 7 68 38 82 36
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVIS CLIENTS -->
+  <section class="section" id="avis-clients" aria-labelledby="reviews-title">
+    <div class="section-inner">
+      <p class="section-label fade-in">Ce que disent nos clients</p>
+      <h2 class="section-title fade-in" id="reviews-title">Avis Clients</h2>
+      <div class="section-divider fade-in"></div>
+      <div class="reviews-header fade-in">
+        <div class="rating-badge">
+          <span class="rating-stars">★★★★★</span>
+          <span class="rating-num">4.9</span>
+          <span class="rating-count">/ 5 — 15 avis Google</span>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card fade-in">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">« Constantin a rénové la douche de notre salle de bain suite à un défaut de calage , conséquence d'une mauvaise pose du bac de douche par un autre artisan . Il a montré beaucoup de sérieux , très... »</p>
+          <div class="review-author">
+            <div class="review-avatar">DP</div>
+            <div>
+              <div class="review-author-name">Dominique Palis</div>
+              <div class="review-source">Avis Google vérifié</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card fade-in">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">« J'ai fait appel à Constantin pour un problème de ballon d'eau chaude.. son approche est très professionnelle et il prend le temps de bien expliquer les choses. Le devis a été envoyé très vite et il... »</p>
+          <div class="review-author">
+            <div class="review-avatar">SB</div>
+            <div>
+              <div class="review-author-name">sandrine benoit</div>
+              <div class="review-source">Avis Google vérifié</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card fade-in">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">« Un grand merci à ce jeune plombier qui allie sérieux, efficacité et gentillesse. Il est intervenu deux fois chez moi : une première fois pour installer un cumulus économique, et aujourd'hui pour une... »</p>
+          <div class="review-author">
+            <div class="review-avatar">KM</div>
+            <div>
+              <div class="review-author-name">Katy Marechal</div>
+              <div class="review-source">Avis Google vérifié</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESENTATION / ABOUT -->
+  <section class="section" id="presentation" aria-labelledby="about-title">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-text fade-in">
+          <p class="section-label">Qui sommes-nous</p>
+          <h2 class="section-title" id="about-title">À propos de nous</h2>
+          <div class="section-divider"></div>
+          <p>Chez athena plomberie ei, nous nous engageons à offrir des services de plomberie de haute qualité. Notre équipe est spécialisée dans les services de réparation et propose des devis en ligne pour plus de commodité.</p>
+          <p>Nous sommes fiers de notre réactivité et de notre professionnalisme, garantissant des interventions rapides et efficaces dans toute la région de Bordeaux.</p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.36C18 2.06 15.94 0 13.36 0c-1.46 0-2.75.67-3.64 1.7L9 3 7.28 1.7C6.39.67 5.1 0 3.64 0 1.06 0-1 2.06-1 4.64c0 .48.11.92.18 1.36H-1v2h22V6zm-7.82-4c1.17 0 2.18 1.01 2.18 2.18 0 .48-.18.92-.46 1.27L12 7.5l-1.9-2.05C9.82 5.1 9.64 4.66 9.64 4.18 9.64 3.01 10.65 2 11.82 2H12.18zM3.64 2c1.17 0 2.18 1.01 2.18 2.18 0 .48-.18.92-.46 1.27L3.46 7.45 1.56 5.4C1.28 5.05 1.1 4.61 1.1 4.13 1.1 2.96 2.11 1.95 3.28 1.95L3.64 2zM2 20c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V10H2v10z"/></svg>
+              </div>
+              <p>Spécialiste de la réparation et de l'installation sanitaire</p>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+              </div>
+              <p>Interventions rapides dans toute la région de Bordeaux</p>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </div>
+              <p>Devis en ligne rapide et gratuit pour plus de commodité</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual fade-in">
+          <div class="about-stats-row">
+            <div class="about-stat">
+              <div class="about-stat-num">4.9<span>★</span></div>
+              <div class="about-stat-label">Note moyenne</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-num">15</div>
+              <div class="about-stat-label">Avis clients</div>
+            </div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num"><span>100%</span></div>
+            <div class="about-stat-label">Satisfaction client garantie</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">Bordeaux</div>
+            <div class="about-stat-label">& toute la région couverte</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZONE INTERVENTION / HORAIRES & CONTACT -->
+  <section class="section" id="zone-intervention" aria-labelledby="zone-title">
+    <div class="section-inner">
+      <p class="section-label fade-in">Où nous trouver</p>
+      <h2 class="section-title fade-in" id="zone-title">Horaires et Contact</h2>
+      <div class="section-divider fade-in"></div>
+      <div class="zone-grid">
+        <div class="zone-map fade-in">
+          <iframe
+            src="https://maps.google.com/maps?q=44.867161499999995,-0.5829608&z=16&output=embed"
+            title="Localisation athena plomberie ei — Le Bouscat"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div class="zone-info">
+          <div class="zone-hours fade-in">
+            <h3>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--secondary)"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+              Horaires d'ouverture
+            </h3>
+            <table class="hours-table">
+              <tbody>
+                <tr>
+                  <td>Lundi</td>
+                  <td>08:00 – 18:00</td>
+                </tr>
+                <tr>
+                  <td>Mardi</td>
+                  <td>08:00 – 18:00</td>
+                </tr>
+                <tr>
+                  <td>Mercredi</td>
+                  <td>08:00 – 18:00</td>
+                </tr>
+                <tr>
+                  <td>Jeudi</td>
+                  <td>08:00 – 18:00</td>
+                </tr>
+                <tr>
+                  <td>Vendredi</td>
+                  <td>09:00 – 17:00</td>
+                </tr>
+                <tr>
+                  <td>Samedi</td>
+                  <td class="hours-closed">Fermé</td>
+                </tr>
+                <tr>
+                  <td>Dimanche</td>
+                  <td class="hours-closed">Fermé</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="zone-contact-info fade-in">
+            <h3>Informations de contact</h3>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <div class="contact-detail-text">
+                <strong>Adresse</strong>
+                9 Rue Abel Antoune, 33110 Le Bouscat, France
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+              </div>
+              <div class="contact-detail-text">
+                <strong>Téléphone</strong>
+                <a href="tel:+33768388236">+33 7 68 38 82 36</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+              </div>
+              <div class="contact-detail-text">
+                <strong>Google Maps</strong>
+                <a href="https://www.google.com/maps/place/?q=place_id:ChIJl8ZrLlT014cRstqu64Ox1mE" target="_blank" rel="noopener">Voir sur Google Maps →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="section" id="contact-rapide" aria-labelledby="contact-title">
+    <div class="section-inner">
+      <p class="section-label fade-in">Nous contacter</p>
+      <h2 class="section-title fade-in" id="contact-title">Contactez-nous</h2>
+      <div class="section-divider fade-in"></div>
+      <div class="contact-grid">
+        <div class="contact-form-wrap fade-in">
+          <p>Remplissez le formulaire pour une intervention rapide.</p>
+          <form id="contactForm" action="#" novalidate>
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse e-mail</label>
+              <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone">
+            </div>
+            <div class="form-group">
+              <label for="service">Type de service</label>
+              <select id="service" name="service">
+                <option value="">Sélectionnez un service</option>
+                <option value="urgence">Dépannage d'urgence</option>
+                <option value="installation">Installation sanitaire</option>
+                <option value="fuite">Réparation de fuites</option>
+                <option value="chaudiere">Entretien de chaudières</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Décrivez votre problème ou votre besoin..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">Envoyer ma demande</button>
+          </form>
+        </div>
+        <div class="contact-aside fade-in">
+          <div class="contact-aside-card">
+            <h3>Intervention d'urgence</h3>
+            <p>Pour toute urgence, appelez-nous directement au <a href="tel:+33768388236">+33 7 68 38 82 36</a>. Nous intervenons rapidement dans toute la région bordelaise.</p>
+          </div>
+          <div class="contact-aside-card">
+            <h3>Devis gratuit</h3>
+            <p>Obtenez un devis gratuit et sans engagement en remplissant le formulaire ou en nous appelant. Réponse rapide garantie.</p>
+          </div>
+          <div class="contact-aside-card">
+            <h3>Zone d'intervention</h3>
+            <p>Nous intervenons à Le Bouscat et dans tous les quartiers de Bordeaux et sa métropole.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Pied de page">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">athena plomberie ei</div>
+          <p class="footer-tagline">Votre expert en plomberie à Le Bouscat. Dépannage d'urgence, installation sanitaire et entretien de chaudières dans toute la région bordelaise.</p>
+          <div class="footer-rating">
+            <span class="stars">★★★★★</span>
+            <span class="num">4.9/5</span>
+            <span class="count">— 15 avis Google</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Dépannage d'urgence</a></li>
+            <li><a href="#services">Installation sanitaire</a></li>
+            <li><a href="#services">Réparation de fuites</a></li>
+            <li><a href="#services">Entretien de chaudières</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span>9 Rue Abel Antoune, 33110 Le Bouscat, France</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            <a href="tel:+33768388236">+33 7 68 38 82 36</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+            <a href="https://www.google.com/maps/place/?q=place_id:ChIJl8ZrLlT014cRstqu64Ox1mE" target="_blank" rel="noopener">Voir sur Google Maps</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 athena plomberie ei — Tous droits réservés</p>
+        <p>9 Rue Abel Antoune, 33110 Le Bouscat, France</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCROLL TOP -->
+  <button class="scroll-top" id="scrollTop" aria-label="Retour en haut">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+  </button>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Fermer">×</button>
+      <h2 class="modal-title" id="modalTitle">Activez votre formulaire de contact</h2>
+      <p class="modal-body">
+        Merci pour votre message ! Pour que votre demande soit bien transmise à <strong>athena plomberie ei</strong>, le formulaire de contact doit être activé.<br><br>
+        Cette activation est simple et rapide. Cliquez sur le bouton ci-dessous pour finaliser la mise en service de votre site et permettre à vos clients de vous contacter directement.
+      </p>
+      <a href="mailto:team@kamkod.com?subject=Website%20athena%20plomberie%20ei%20%E2%80%94%20ChIJl8ZrLlT014cRstqu64Ox1mE" class="modal-cta">
+        Activer le formulaire de contact
+      </a>
+      <p class="modal-note">Vous serez redirigé vers notre équipe pour finaliser l'activation.</p>
+    </div>
+  </div>
+
+  <script>
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function() {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen.toString());
+    });
+
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        mobileMenu.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Fade-in on scroll
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    fadeEls.forEach(function(el) {
+      observer.observe(el);
+    });
+
+    // Scroll top button
+    const scrollTopBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 400) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Modal
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modalClose = document.getElementById('modalClose');
+    const contactForm = document.getElementById('contactForm');
+
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      modalOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+
+    function closeModal() {
+      modalOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    modalClose.addEventListener('click', closeModal);
+
+    modalOverlay.addEventListener('click', function(e) {
+      if (e.target === modalOverlay) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+        closeModal();
+      }
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const navHeight = document.querySelector('.nav').offsetHeight;
+          const targetPos = target.getBoundingClientRect().top + window.scrollY - navHeight;
+          window.scrollTo({ top: targetPos, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
